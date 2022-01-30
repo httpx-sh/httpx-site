@@ -35,7 +35,7 @@ const config = {
                 title: 'httpx',
                 logo: {
                     alt: 'httpx Logo',
-                    src: 'img/httpx-logo.png',
+                    src: 'img/httpx-logo-small.png',
                 },
                 items: [
                     {
