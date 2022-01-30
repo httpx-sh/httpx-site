@@ -29,8 +29,8 @@ const FeatureList = [
         description: require('../../static/img/graphql-over-ws.png').default,
     },
     {
-        title: 'Misc',
-        Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+        title: 'Miscellaneous',
+        Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
         description: require('../../static/img/shell-completion.png').default,
     },
 ];
