@@ -9,7 +9,7 @@ sidebar_position: 5
 ```
 ### Dubbo sayHi
 //@name sayHi
-DUBBO 127.0.0.1:20880/GreetingsService?method=sayHi(java.lang.String)
+DUBBO 127.0.0.1:20880/GreetingsService/sayHi(java.lang.String)
 Content-Type: application/json
 
 "jackie"
