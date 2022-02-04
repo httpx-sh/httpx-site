@@ -69,3 +69,24 @@ Content-Type: application/json
 SUB subject1
 Host: nats://localhost:4222
 ```
+
+### Aliyun EventBridge
+
+```
+### send aliyun event bridge message
+//@name ali-event
+PUB demo-event-bus
+Host: eventbridge://endpoint_host
+Authorization: Basic your_key_iid:your_key_secret
+Content-Type: application/json
+
+{
+  "specversion": "1.0",
+  "source": "demo.event",
+  "type": "com.example.someevent",
+  "datacontenttype": "application/json",
+  "data": {
+    "name": "jackie"
+  }
+}
+```
