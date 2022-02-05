@@ -77,7 +77,7 @@ Host: nats://localhost:4222
 //@name ali-event
 PUB demo-event-bus
 Host: eventbridge://endpoint_host
-Authorization: Basic your_key_iid:your_key_secret
+Authorization: Basic your_key_id:your_key_secret
 Content-Type: application/json
 
 {
