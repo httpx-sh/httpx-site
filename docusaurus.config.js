@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'httpx',
-    tagline: 'CLI to run HTTP file',
+    tagline: 'CLI and IDE plugin to test REST API, GraphQL, gRPC services with HTTP DSL',
     url: 'https://httpx.sh',
     baseUrl: '/',
     onBrokenLinks: 'throw',
