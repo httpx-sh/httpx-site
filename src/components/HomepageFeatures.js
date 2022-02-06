@@ -29,9 +29,9 @@ const FeatureList = [
         description: require('../../static/img/graphql-over-ws.png').default,
     },
     {
-        title: 'Miscellaneous',
-        Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
-        description: require('../../static/img/shell-completion.png').default,
+        title: 'Pub/Sub - Kafka, RabbitMQ ...',
+        Svg: require('../../static/img/pub-sub.svg').default,
+        description: require('../../static/img/kafka-pub.png').default,
     },
 ];
 
