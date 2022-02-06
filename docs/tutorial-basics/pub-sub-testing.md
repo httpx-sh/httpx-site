@@ -70,6 +70,28 @@ SUB subject1
 Host: nats://localhost:4222
 ```
 
+### Redis Pub/Sub
+
+```
+### publish redis message
+//@name redis-pub
+PUB channel1
+Host: redis://localhost:6379
+Content-Type: application/json
+
+{
+"name": "Jackie"
+}
+
+```
+
+```
+### subscribe redis
+//@name redis-sub
+SUB channel1
+Host: redis://localhost:6379
+```
+
 ### Aliyun EventBridge
 
 ```
