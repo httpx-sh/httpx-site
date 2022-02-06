@@ -9,7 +9,7 @@ PUB/SUB is to test Kafka, RabbitMQ and Nats etc.
 ### Kafka
 
 ```
-### publish kafka message
+### publish Kafka message
 //@name kafka-pub
 PUB topic-1
 Host: kafka://localhost:9092
@@ -21,7 +21,7 @@ Content-Type: application/json
 ```
 
 ```
-### subscribe kafka topic 
+### subscribe Kafka topic 
 //@name kafka-sub
 SUB topic-1
 Host: kafka://localhost:9092
@@ -30,7 +30,7 @@ Host: kafka://localhost:9092
 ### RabbitMQ
 
 ```
-### publish rabit message
+### publish RabbitMQ message
 //@name rabbit-pub
 PUB queue1
 Host: amqp://localhost:5672
@@ -42,7 +42,7 @@ Content-Type: application/json
 ```
 
 ```
-### listen rabit message
+### Subscribe RabbitMQ queue
 //@name rabbit-sub
 SUB queue1
 Host: amqp://localhost:5672
@@ -73,7 +73,7 @@ Host: nats://localhost:4222
 ### Redis Pub/Sub
 
 ```
-### publish redis message
+### publish Redis message
 //@name redis-pub
 PUB channel1
 Host: redis://localhost:6379
@@ -86,7 +86,7 @@ Content-Type: application/json
 ```
 
 ```
-### subscribe redis
+### subscribe Redis
 //@name redis-sub
 SUB channel1
 Host: redis://localhost:6379
