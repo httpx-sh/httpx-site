@@ -62,6 +62,10 @@ const config = {
                                 label: 'Tutorial',
                                 to: '/docs/intro',
                             },
+                            {
+                                label: 'Cheat Sheet',
+                                to: 'https://cheatography.com/linux-china/cheat-sheets/httpx/',
+                            },
                         ],
                     },
                     {
