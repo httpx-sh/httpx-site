@@ -27,6 +27,9 @@ GET https://httpbin.org/ip
 
 Then you can input `httpx myip` to invoke http request. Or you can input `chmod u+x index.http` then execute `./index.http myip`
 
+**Attention**: httpx will look `index.http` by default if you don't supply `--httpfile` option. 
+If httpx can not find `index.http` in current directory, and it will look `index.http` in parent directory until root directory.  
+
 ### HTTP file syntax
 
 Please refer https://www.jetbrains.com/help/idea/exploring-http-syntax.html
