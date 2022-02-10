@@ -37,7 +37,7 @@ Then you can input `httpx myip` to invoke http request. Or you can input `chmod 
 # Environment variables overwrite?
 
 httpx supports to load environment variables from `http-client.env.json` and `http-client.private.env.json`, and compatible with JetBrains HTTP Client plugin.
-For some cases, you want to overwrite environment variables from command line, and you can use `-Duser=xxx` option.
+For some cases, you want to overwrite environment variables from command line, and you can use `-e user=xxx` option.
 
 # HTTP file syntax
 
