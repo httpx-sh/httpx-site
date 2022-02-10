@@ -34,6 +34,11 @@ Then you can input `httpx myip` to invoke http request. Or you can input `chmod 
 * If httpx can not find `index.http` in current directory, and it will look `index.http` in parent directory until root directory.
 * If index.http not found in parent directory chain, and it will try to find `~/.httpx/index.http` as default index.http
 
+# Environment variables overwrite?
+
+httpx supports to load environment variables from `http-client.env.json` and `http-client.private.env.json`, and compatible with JetBrains HTTP Client plugin.
+For some cases, you want to overwrite environment variables from command line, and you can use `-Duser=xxx` option.
+
 # HTTP file syntax
 
 Please refer https://www.jetbrains.com/help/idea/exploring-http-syntax.html
