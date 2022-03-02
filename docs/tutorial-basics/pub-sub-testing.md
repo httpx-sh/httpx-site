@@ -92,6 +92,27 @@ SUB channel1
 Host: redis://localhost:6379
 ```
 
+### MQTT Pub/Sub
+
+```
+### publish mqtt message
+//@name mqtt-pub
+PUB topic1
+Host: mqtt://localhost:1883
+Content-Type: application/json
+
+{
+  "name": "Jackie"
+}
+```
+
+```
+### subscribe mqtt
+//@name mqtt-sub
+SUB topic1
+Host: mqtt://localhost:1883
+```
+
 ### Aliyun EventBridge
 
 ```
