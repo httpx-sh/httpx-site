@@ -24,4 +24,15 @@ You can set default target to run by `--target ` option.
 GET https://httpbin.org/ip
 ```
 
+### variables overwrite from ENV
+HTTP environment variables are from environment files `http-client.env.json` and `http-client.private.env.json`, for example: 
+
+```
+GET https://example.com/api1
+Authorization: Basic {{user}} {{password}}
+```
+
+In CLI mode you can overwrite them by ENV variables by `HTTPX_USER=admin HTTPX_PASSWORD=xx httpx hello`. 
+It's friendly for CI, such as GitHub Actions.
+
 **Attention**: If no target from CLI, and httpx will run first target in http file!
