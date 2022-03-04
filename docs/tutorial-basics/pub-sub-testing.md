@@ -27,6 +27,27 @@ SUB topic-1
 Host: kafka://localhost:9092
 ```
 
+### Apache Pulsar
+
+```
+### send pulsar message
+//@name pulsar-pub
+PUB topic1
+Host: pulsar://localhost:6650
+Content-Type: application/json
+
+{
+  "name": "Jackie"
+}
+```
+
+```
+### subscribe pulsar
+//@name pulsar-sub
+SUB topic1
+Host: pulsar://localhost:6650
+```
+
 ### RabbitMQ
 
 ```
