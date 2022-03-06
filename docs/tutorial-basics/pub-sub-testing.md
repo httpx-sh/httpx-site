@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # PUB/SUB Testing
 
-PUB/SUB is to test Kafka, RabbitMQ and Nats etc.
+PUB/SUB is to test Kafka, RabbitMQ, Apache Pulsar, Redis, Nats etc.
 
 ### Kafka
 
@@ -48,7 +48,7 @@ SUB topic1
 Host: pulsar://localhost:6650
 ```
 
-### RabbitMQ
+### RabbitMQ/AMQP
 
 ```
 ### publish RabbitMQ message
@@ -132,6 +132,27 @@ Content-Type: application/json
 //@name mqtt-sub
 SUB topic1
 Host: mqtt://localhost:1883
+```
+
+### Stomp Pub/Sub
+
+```
+### publish stomp message
+//@name stomp-pub
+PUB queue1
+Host: stomp://localhost:61613
+Content-Type: application/json
+
+{
+  "name": "Jackie"
+}
+```
+
+```
+### subscribe stomp
+//@name stomp-sub
+SUB queue1
+Host: stomp://localhost:61613
 ```
 
 ### Aliyun EventBridge
