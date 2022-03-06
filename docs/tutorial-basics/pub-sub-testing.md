@@ -155,6 +155,27 @@ SUB queue1
 Host: stomp://localhost:61613
 ```
 
+### Aliyun MNS
+
+```
+### send aliyun MNS message
+//@name mns-pub
+PUB demo-mns
+Host: mns://endpoint_host
+Authorization: Basic your_key_id:your_key_secret
+Content-Type: application/json
+
+{
+  "specversion": "1.0",
+  "source": "demo.event",
+  "type": "com.example.someevent",
+  "datacontenttype": "application/json",
+  "data": {
+    "name": "jackie"
+  }
+}
+```
+
 ### Aliyun EventBridge
 
 ```
