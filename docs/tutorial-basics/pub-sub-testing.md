@@ -182,6 +182,11 @@ Content-Type: application/json
 }
 ```
 
+**Attention**: Authorization header for authentication
+
+* Without Authorization header: httpx will read Aliyun AK from `~/.aliyun/config.json` configured by [Aliyun CLI](https://github.com/aliyun/aliyun-cli)
+* AK ID match:  if secret length <= 4, such as `Authorization: Basic 5Oi0:11`, and httpx will find AK from `~/.aliyun/config.json` with id as part of `access_key_id` value
+
 ### Aliyun EventBridge
 
 ```
