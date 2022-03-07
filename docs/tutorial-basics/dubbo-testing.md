@@ -16,3 +16,6 @@ Content-Type: application/json
 ```
 
 Now httpx only supports end-to-end communication.
+
+To test Dubbo Service in JetBrains IDEs, please install Dubbo Requests plugin from https://plugins.jetbrains.com/plugin/18570-dubbo-requests-in-http-client 
+
