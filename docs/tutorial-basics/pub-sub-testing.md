@@ -48,7 +48,9 @@ SUB topic1
 Host: pulsar://localhost:6650
 ```
 
-### RabbitMQ/AMQP
+### AMQP - RabbitMQ
+
+AMQP: Advanced Message Queuing Protocol, and AMQP Products: https://www.amqp.org/about/examples
 
 ```
 ### publish RabbitMQ message
@@ -115,6 +117,8 @@ Host: redis://localhost:6379
 
 ### MQTT Pub/Sub
 
+MQTT: The Standard for IoT Messaging, and MQTT Software: https://mqtt.org/software/
+
 ```
 ### publish mqtt message
 //@name mqtt-pub
@@ -135,6 +139,8 @@ Host: mqtt://localhost:1883
 ```
 
 ### Stomp Pub/Sub
+
+Stomp: Simple Text Oriented Messaging Protocol. Implementations: http://stomp.github.io/implementations.html
 
 ```
 ### publish stomp message
