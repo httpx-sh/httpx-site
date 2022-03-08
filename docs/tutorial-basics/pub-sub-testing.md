@@ -207,3 +207,13 @@ Content-Type: application/json
   }
 }
 ```
+
+# FAQ
+
+### How to test ActiveMQ?
+
+ActiveMQ supports multi MQ protocols, and you can test ActiveMQ by following protocols:
+
+* MQTT: 1883
+* AMQP: 5672
+* STOMP: 61613
