@@ -25,7 +25,7 @@ Content-Type: application/json
 [ 1 ]
 ```
 
-Then set request body from pipeline with `echo hello | httpx post`
+Then set request body from pipeline with `echo hello | httpx post` or `httpx post < ./demo.json` .
 
 ### default target to run
 
