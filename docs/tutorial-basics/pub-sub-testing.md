@@ -4,7 +4,7 @@ sidebar_position: 10
 
 # PUB/SUB Testing
 
-PUB/SUB is to test Kafka, RabbitMQ, Apache Pulsar, Redis, Nats etc.
+![MQ Products](../../static/img/tutorial/mq-products.png)
 
 ### Kafka
 
