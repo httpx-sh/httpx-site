@@ -4,6 +4,8 @@ sidebar_position: 11
 
 # Cloud API testing
 
+![Cloud Vendors](../../static/img/tutorial/cloud-vendors.png)
+
 ### AWS API testing
 
 ```
