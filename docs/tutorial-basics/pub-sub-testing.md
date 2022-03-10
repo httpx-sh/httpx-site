@@ -161,6 +161,39 @@ SUB queue1
 URI: stomp://localhost:61613
 ```
 
+### AWS SNS
+
+```
+### send sns message
+PUB sns-demo
+URI: arn:aws:sns:us-east-1:63279302347037:sns-demo
+Content-Type: application/json
+               
+{
+  "name": "linux_china"
+}
+```
+
+### AWS EventBridge
+
+
+```
+### send aws eventbridge message
+PUB eventbus-demo
+URI: arn:aws:events:us-east-1:63279302704337:event-bus/eventbus-demo
+Content-Type: application/json
+                
+{
+  "specversion": "1.0",
+  "source": "demo.event",
+  "type": "com.example.someevent",
+  "datacontenttype": "application/json",
+  "data": {
+    "name": "linux_china"
+  }
+}
+```
+
 ### Aliyun MNS
 
 ```
@@ -177,7 +210,7 @@ Content-Type: application/json
   "type": "com.example.someevent",
   "datacontenttype": "application/json",
   "data": {
-    "name": "jackie"
+    "name": "linux_china"
   }
 }
 ```
@@ -203,7 +236,7 @@ Content-Type: application/json
   "type": "com.example.someevent",
   "datacontenttype": "application/json",
   "data": {
-    "name": "jackie"
+    "name": "linux_china"
   }
 }
 ```
