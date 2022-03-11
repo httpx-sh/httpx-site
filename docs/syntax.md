@@ -22,7 +22,7 @@ All environment variables are defined in json files:
       "username": "admin",
       "password": "123456"
     },
-    "local": {
+    "development": {
       "hostname": "localhost:8080"
     },
     "production": {
@@ -42,12 +42,12 @@ Some functions are not compatible with JetBrains HTTP Client and VS Code REST Cl
 
 #### Function call styles:
 
-* function without params: `{{$uuid}}`,  `{{guid}}`, `{{timestamp}}`, `{{randomInt}}`
-* function with params: `{{$base64 abc1234}}`,  `{{$base64 %name}}`, `{{$escapeXml <user></user>}}`
+* function without params: `{{$uuid}}`,  `{{$guid}}`, `{{$timestamp}}`, `{{$randomInt}}`
+* function with params: `{{$base64 abc123}}`,  `{{$base64 %name}}`, `{{$escapeXml <user></user>}}`
 * function with template params:
 
 ```
-{{$base64 `%{name}:${password}`}}
+{{$base64 `%{name}:%{password}`}}
 ```
 
 If you want to refer env variables, please use `%name` as param or `%{name}` in template literal.
