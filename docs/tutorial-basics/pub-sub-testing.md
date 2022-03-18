@@ -138,6 +138,8 @@ SUB topic1
 URI: mqtt://localhost:1883
 ```
 
+**Attention**: `mqtt://` is for MQTT 3.x, and `mqtt5://` is for MQTT 5.
+
 ### Stomp Pub/Sub
 
 Stomp: Simple Text Oriented Messaging Protocol. Implementations: http://stomp.github.io/implementations.html
@@ -175,7 +177,6 @@ Content-Type: application/json
 ```
 
 ### AWS EventBridge
-
 
 ```
 ### send aws eventbridge message
