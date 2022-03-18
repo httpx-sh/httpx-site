@@ -10,7 +10,7 @@ sidebar_position: 12
 
 # Request/data pipeline
 
-You can use request/data pipeline in your shell script code. 
+You can use request/data pipeline in your shell script code.
 
 ### request from pipeline
 
@@ -50,6 +50,20 @@ You can set default target to run by `--t ` option.
 ### get my internet ip
 # @name myip
 GET https://httpbin.org/ip
+```
+
+### Generate http file OpenAPI
+
+You can generate http file from OpenAPI json file:
+
+```bash
+$ httpx -f openapi.http --import http://api.exmaple.com/openapi.json
+```
+
+If you want to generate http file for http path(wildcard match), use following example:
+
+```bash
+$ httpx -f openapi.http --import http://api.exmaple.com/openapi.json  /user
 ```
 
 **Attention**: If no target from CLI, and httpx will run first target in http file!
