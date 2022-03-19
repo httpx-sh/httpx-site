@@ -69,6 +69,10 @@ const config = {
                                 label: 'Cheat Sheet',
                                 to: 'https://cheatography.com/linux-china/cheat-sheets/httpx/',
                             },
+                            {
+                                label: 'Httpx JetBrains plugin',
+                                to: 'https://plugins.jetbrains.com/plugin/18807-httpx-requests',
+                            },
                         ],
                     },
                     {
