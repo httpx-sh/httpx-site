@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 13
 ---
 
 # Miscellaneous
@@ -63,7 +63,7 @@ $ httpx -f openapi.http --import http://api.exmaple.com/openapi.json
 If you want to generate http file for http path(wildcard match), use following example:
 
 ```bash
-$ httpx -f openapi.http --import http://api.exmaple.com/openapi.json  /user
+$ httpx -f openapi.http --import https://api.exmaple.com/openapi.json  /user
 ```
 
 **Attention**: If no target from CLI, and httpx will run first target in http file!
