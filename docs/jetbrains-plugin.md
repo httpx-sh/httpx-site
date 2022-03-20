@@ -4,11 +4,25 @@ sidebar_position: 4
 
 # Httpx JetBrains Plugin
 
-Httpx JetBrains plugin is based on JetBrains HTTP Client, and it's a very powerful. 
+Httpx JetBrains plugin is based on JetBrains HTTP Client, and it's a very powerful.
 If you don't know about it, please click https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html
 
 With Httpx plugin you can test difference services from IDE directly, yes, just one click.
 
-Please search httpx in IDE's plugin manager, install and have a try. 
+Please search httpx in IDE's plugin manager, install and have a try.
 
 For more about the Httpx JetBrains plugin, please click https://plugins.jetbrains.com/plugin/18807-httpx-requests
+
+Some screenshots as following:
+
+* Test GitHub GraphQL API
+
+![GitHub GraphQL API](../static/img/tutorial/httpx-plugin-graphql.png)
+
+* Test Apache Thrift Service
+
+![GitHub GraphQL API](../static/img/tutorial/httpx-plugin-thrift.png)
+
+* Test to send Kafka message
+
+![GitHub GraphQL API](../static/img/tutorial/httpx-plugin-kafka.png)
