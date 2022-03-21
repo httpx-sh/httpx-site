@@ -48,4 +48,5 @@ return welcome .. ARGV[1]
 
 * httpx now support RSET/HMSET/EVAL only
 * If Host header missing, and httpx will use `127.0.0.1:6379` as host
+* httpx supports Redis Pub/Sub, please check https://httpx.sh/docs/tutorial-basics/pub-sub-testing#redis-pubsub
 
