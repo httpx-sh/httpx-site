@@ -35,5 +35,8 @@ MEMCACHE -user.111
 Host: localhost:11211
 ```
 
-**Attention**: httpx now uses ascii memcache protocol.
+**Attention**: 
+
+* httpx now uses ascii memcache protocol
+* If Host header missing, and httpx will use `127.0.0.1:11211` as host
 
