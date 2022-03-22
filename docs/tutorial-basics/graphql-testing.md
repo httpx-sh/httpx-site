@@ -52,4 +52,4 @@ Content-Type: application/graphql+json
 }
 ```
 
-**Attention**: httpx JetBrains plugin requires [JetBrasin GraphQL Plugin](https://plugins.jetbrains.com/plugin/8097-graphql) for GraphQL language features, please install it first.
+**Attention**: httpx JetBrains plugin requires [JetBrains GraphQL Plugin](https://plugins.jetbrains.com/plugin/8097-graphql) for GraphQL language features, please install it first.
