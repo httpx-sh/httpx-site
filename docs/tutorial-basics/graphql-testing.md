@@ -40,3 +40,16 @@ Content-Type: application/graphql
 subscription { greetings }
 ```
 
+* JSON Schema and GraphQL language injection for `application/graphql+json`
+
+```
+### GraphQL json format
+POST https://httpbin.org/post
+Content-Type: application/graphql+json
+
+{
+  "query": "query { me {id} }"
+}
+```
+
+**Attention**: httpx JetBrains plugin requires [JetBrasin GraphQL Plugin](https://plugins.jetbrains.com/plugin/8097-graphql) for GraphQL language features, please install it first.
