@@ -52,4 +52,15 @@ Content-Type: application/graphql+json
 }
 ```
 
+* X-GraphQL-Variables header
+It's hard to write GraphQL query with `application/graphql+json` data format, and `X-GraphQL-Variables` introduced for GraphQL variables.
+
+```http request
+GRAPHQL https://httpbin.org/post
+Content-Type: application/graphql
+X-GraphQL-Variables:  {"id": 1}
+
+query { user($id: ID) { id name } }
+```
+
 **Attention**: httpx JetBrains plugin requires [JetBrains GraphQL Plugin](https://plugins.jetbrains.com/plugin/8097-graphql) for GraphQL language features, please install it first.
