@@ -53,6 +53,7 @@ Content-Type: application/graphql+json
 ```
 
 * X-GraphQL-Variables header
+
 It's hard to write GraphQL query with `application/graphql+json` data format, and `X-GraphQL-Variables` introduced for GraphQL variables.
 
 ```http request
