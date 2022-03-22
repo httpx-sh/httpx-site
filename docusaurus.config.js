@@ -49,8 +49,13 @@ const config = {
                     },
                     {to: '/blog', label: 'Blog', position: 'left'},
                     {
+                        href: 'https://plugins.jetbrains.com/plugin/18807-httpx-requests',
+                        label: 'JetBrains Plugin',
+                        position: 'right',
+                    },
+                    {
                         href: 'https://github.com/httpx-sh/httpx/releases',
-                        label: 'Download',
+                        label: 'CLI Download',
                         position: 'right',
                     },
                     {
