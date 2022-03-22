@@ -17,3 +17,8 @@ Content-Type: application/json
 
 Now httpx only supports Sofa RPC direct communication.
 
+# Notes
+
+Sofa RPC requires FQN(fully qualified name) for class, such as `java.lang.Integer`, `java.lang.String`.
+With httpx you can omit `java.lang.` prefix, and you can also use `int`, `long`, `double`, `boolean` ... primitive types.
+

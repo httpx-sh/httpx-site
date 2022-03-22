@@ -17,5 +17,10 @@ Content-Type: application/json
 
 Now httpx only supports end-to-end communication.
 
-To test Dubbo Service in JetBrains IDEs, please install Dubbo Requests plugin from https://plugins.jetbrains.com/plugin/18570-dubbo-requests-in-http-client 
+To test Dubbo Service in JetBrains IDEs, please install Dubbo Requests plugin from https://plugins.jetbrains.com/plugin/18570-dubbo-requests-in-http-client
+
+# Notes
+
+Dubbo requires FQN(fully qualified name) for class, such as `java.lang.Integer`, `java.lang.String`.
+With httpx you can omit `java.lang.` prefix, and you can also use `int`, `long`, `double`, `boolean` ... primitive types.
 
