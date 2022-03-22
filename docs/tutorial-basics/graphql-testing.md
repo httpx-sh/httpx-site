@@ -29,10 +29,12 @@ query {
 
 * graphql-ws support:  https://github.com/enisdenjo/graphql-ws
 
+Now you should use `GRAPHQLWS` or `GRAPHQLWSS` methods to test GraphQL services over WebSocket, and issue link here https://youtrack.jetbrains.com/issue/IDEA-290191
+
 ```
 ### graphql query over WebSocket
 //@name subscription
-GRAPHQL ws://localhost:4000/graphql
+GRAPHQLWS localhost:4000/graphql
 Content-Type: application/graphql
 
 subscription { greetings }
