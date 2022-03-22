@@ -49,6 +49,11 @@ const config = {
                     },
                     {to: '/blog', label: 'Blog', position: 'left'},
                     {
+                        href: 'https://github.com/httpx-sh/httpx/releases',
+                        label: 'Download',
+                        position: 'right',
+                    },
+                    {
                         href: 'https://github.com/httpx-sh/httpx',
                         label: 'GitHub',
                         position: 'right',
