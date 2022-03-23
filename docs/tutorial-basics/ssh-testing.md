@@ -41,5 +41,12 @@ X-SSH-Private-Key: /path-to-private-key
 ls -al
 ```
 
-**Notes**: httpx JetBrains plugin contains Shell Script language support for HTTP Body
+**Notes**:
 
+* httpx JetBrains plugin contains Shell Script language support for HTTP Body
+* httpx converts multi script lines into one line with `; ` separator, and make sure script executed in one session. Newline escape supported too.
+
+```
+echo "This will print \
+as one line."
+```
