@@ -35,8 +35,8 @@ ls -al
 
 ```http request
 ### ssh with private key
-SSH ubuntu@awshost.example.com
-X-SSH-Private-Key: /path-to-ec2-key
+SSH ubuntu@yourdomain.host
+X-SSH-Private-Key: /path-to-private-key
 
 ls -al
 ```
