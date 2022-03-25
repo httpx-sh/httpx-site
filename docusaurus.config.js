@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'servicex',
     tagline: 'CLI and IDE plugin to test REST API, GraphQL, gRPC services with HTTP DSL',
-    url: 'https://httpx.sh',
+    url: 'https://servicex.sh',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
