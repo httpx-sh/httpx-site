@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'httpx',
+    title: 'servicex',
     tagline: 'CLI and IDE plugin to test REST API, GraphQL, gRPC services with HTTP DSL',
     url: 'https://httpx.sh',
     baseUrl: '/',
@@ -35,7 +35,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             navbar: {
-                title: 'httpx',
+                title: 'servicex',
                 logo: {
                     alt: 'httpx Logo',
                     src: 'img/httpx-logo-small.png',
