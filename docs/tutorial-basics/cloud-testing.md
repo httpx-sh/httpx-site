@@ -9,14 +9,19 @@ sidebar_position: 11
 ### AWS API testing
 
 ```
-GET https://iam.amazonaws.com/?Action=ListUsers&Version=2010-05-08
-Authorization: Basic keyId KeyScret
+AWS https://iam.amazonaws.com/?Action=ListUsers&Version=2010-05-08
+X-Region-Id: us-east-1
+Authorization: Basic keyId:KeyScret
 ```
+
+**Attention**: httpx will read config from [AWS Command Line Interface](https://aws.amazon.com/cli/) if Authorization header not available.
 
 ### Aliyun API
 
 ```
-GET https://ecs-cn-hangzhou.aliyuncs.com?Action=DescribeInstances&Version=2014-05-26
+ALIYUN https://ecs-cn-hangzhou.aliyuncs.com?Action=DescribeInstances&Version=2014-05-26
 Authorization: Basic keyId:keyScret
 ```
+
+**Attention**: httpx will read config from [Alibaba Cloud CLI](https://github.com/aliyun/aliyun-cli) if Authorization header not available.
 
