@@ -23,5 +23,17 @@ ALIYUN https://ecs-cn-hangzhou.aliyuncs.com?Action=DescribeInstances&Version=201
 Authorization: Basic keyId:keyScret
 ```
 
-**Attention**: httpx will read config from [Alibaba Cloud CLI](https://github.com/aliyun/aliyun-cli) if Authorization header not available.
+**Attention**:
+
+* httpx will read config from [Alibaba Cloud CLI](https://github.com/aliyun/aliyun-cli) if Authorization header not available.
+* httpx will read config from `$HOME/.alibabacloud/credentials.ini` if CLI config absent, and credentials.ini data format as following:
+
+```
+[default]
+enable = true
+type = access_key
+access_key_id = your_access_key_id
+access_key_secret = your_access_key_secret
+region_id = cn-hangzhou
+```
 
