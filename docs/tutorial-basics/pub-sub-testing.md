@@ -93,6 +93,8 @@ SUB subject1
 URI: nats://localhost:4222
 ```
 
+**Attentions**: If you want to PUB/SUB multi Nats subjects, please use `SUB subject1,subject2` or `PUB subject1,subject2`.
+
 ### Redis Pub/Sub
 
 ```
