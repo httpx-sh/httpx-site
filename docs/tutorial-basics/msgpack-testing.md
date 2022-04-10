@@ -45,4 +45,19 @@ Content-Type: application/json
 "Jackie"
 ```
 
+# Nvim RPC testing
 
+Yes, you can use `MSGPACK` to test Nvim RPC.
+
+* Start Nvim with RPC service:  `nvim --listen 127.0.0.1:6666`
+* Call nvim_comand_name from `MSGPACK` as following:
+
+```
+### nvim rpc test
+MSGPACK 127.0.0.1:6666/nvim_command
+Content-Type: application/json
+
+"echo 'hello world!'"
+```
+
+For more, please refer https://neovim.io/doc/user/api.html
