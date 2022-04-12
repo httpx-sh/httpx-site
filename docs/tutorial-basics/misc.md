@@ -57,7 +57,7 @@ GET https://httpbin.org/ip
 You can generate http file from OpenAPI json file:
 
 ```bash
-$ httpx -f openapi.http --import http://api.exmaple.com/openapi.json
+$ httpx -f openapi.http --import https://api.exmaple.com/openapi.json
 ```
 
 If you want to generate http file for http path(wildcard match), use following example:
