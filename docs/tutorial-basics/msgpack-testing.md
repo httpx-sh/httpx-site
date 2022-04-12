@@ -61,3 +61,23 @@ Content-Type: application/json
 ```
 
 For more, please refer https://neovim.io/doc/user/api.html
+
+# X-Args-N HTTP Header
+
+`X-Args-0`, `X-Args-1` introduce for language injection in JetBrains IDEs.
+
+For example, if you want to invoke `nvim_exec_lua`, first param is Lua code, and second param is array as params for Lua code. 
+You can introduce `X-Args-1: []` for second params, and http body as first param, then you easy to edit Lua code with language injection. 
+
+```
+### nvim Lua exec
+//@name nvim-lua
+MSGPACK 127.0.0.1:6666/nvim_exec_lua
+Content-Type: text/x-lua
+X-Args-1: []
+
+local mark = "line:"
+return mark .. vim.api.nvim_win_get_cursor(0)[1]
+```
+
+You can use feature with JSONRPC and DUBBO methods.
