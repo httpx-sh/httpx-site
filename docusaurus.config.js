@@ -83,6 +83,10 @@ const config = {
                                 label: 'Httpx JetBrains plugin',
                                 to: 'https://plugins.jetbrains.com/plugin/18807-httpx-requests',
                             },
+                            {
+                                label: 'Neovim plugin',
+                                to: 'https://github.com/servicex-sh/httpx.vim',
+                            },
                         ],
                     },
                     {
