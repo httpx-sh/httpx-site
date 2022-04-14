@@ -26,7 +26,7 @@ X-JSON-Type: {name:string, age:number}
 X-JSON-Type: [{ name:string, age:number, email?:string }, string]
 ```
 
-Data types as follwing: 
+Data types as following: 
 
 * object: {id:number, name:string}
 * tuple: [string, number, {id:number, name:string}]
