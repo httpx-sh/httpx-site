@@ -31,7 +31,6 @@ Data types as follwing:
 * object: {id:number, name:string}
 * tuple: [string, number, {id:number, name:string}]
 * array: string[]
-* set: Set<string>
 * primitive type: string, object, integer, number, 1..100(range), boolean, date-time, time, date, email, hostname, ipv4, ipv6, uuid, uri
 
 
