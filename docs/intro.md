@@ -32,7 +32,7 @@ Then you can input `httpx myip` to invoke http request. Or you can input `chmod 
 * http file assigned by `-f` or `--httpfile` option
 * httpx will look `index.http` by default if no http file assigned
 * If httpx can not find `index.http` in current directory, and it will look `index.http` in parent directory until root directory.
-* If index.http not found in parent directory chain, and it will try to find `~/.httpx/index.http` as default index.http
+* If index.http not found in parent directory chain, and it will try to find `~/.servicex/index.http` as default index.http
 
 # Environment variables overwrite?
 
