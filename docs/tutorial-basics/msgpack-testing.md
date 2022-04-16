@@ -45,7 +45,7 @@ Content-Type: application/json
 "Jackie"
 ```
 
-# Nvim RPC testing
+# Neovim RPC testing
 
 Yes, you can use `NIVM` to test Nvim RPC.
 
