@@ -87,4 +87,4 @@ local mark = "line:"
 return mark .. vim.api.nvim_win_get_cursor(0)[1]
 ```
 
-You can use feature with JSONRPC and DUBBO methods.
+You can use this feature with JSONRPC and DUBBO methods.
