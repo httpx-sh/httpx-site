@@ -47,17 +47,24 @@ Content-Type: application/json
 
 # Nvim RPC testing
 
-Yes, you can use `MSGPACK` to test Nvim RPC.
+Yes, you can use `NIVM` to test Nvim RPC.
 
 * Start Nvim with RPC service:  `nvim --listen 127.0.0.1:6666`
-* Call nvim_comand_name from `MSGPACK` as following:
+* Call nvim_comand_name from `NVIM` as following:
 
 ```
-### nvim rpc test
-MSGPACK 127.0.0.1:6666/nvim_command
+### nvim Lua exec
+NVIM nvim_exec_lua
+Content-Type: text/x-lua
+
+vim.api.nvim_command('!ls')
+
+### msgpack request
+NVIM nvim_buf_set_lines
+Host: 127.0.0.1:6666
 Content-Type: application/json
 
-"echo 'hello world!'"
+[0, 0, 0, true, ["hello"]]
 ```
 
 For more, please refer https://neovim.io/doc/user/api.html
