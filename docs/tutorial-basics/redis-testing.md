@@ -44,9 +44,27 @@ local welcome="Hello "
 return welcome .. ARGV[1]
 ```
 
+* Redis 7.0 functions: https://redis.io/docs/manual/programmability/functions-intro/
+
+```
+### Redis 7 fuctions
+//@name redis-mylib
+LOAD mylib
+Host: localhost:16379
+Content-Type: text/x-lua
+
+#!lua name=mylib
+redis.register_function(
+        'knockknock',
+        function()
+            return 'Who\'s there?'
+        end
+)
+```
+
 **Attention**:
 
-* httpx now support RSET/HMSET/EVAL only
+* httpx now support RSET/HMSET/EVAL/LOAD only, and LOAD with `REPLACE` modifier.
 * If Host header missing, and httpx will use `127.0.0.1:6379` as host
 * httpx supports Redis Pub/Sub, please check https://httpx.sh/docs/tutorial-basics/pub-sub-testing#redis-pubsub
 
