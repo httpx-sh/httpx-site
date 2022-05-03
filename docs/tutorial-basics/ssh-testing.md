@@ -28,7 +28,6 @@ ls -al
 SSH ubuntu@yourdomain.host
 
 ls -al
-
 ```
 
 * SSH with private key
@@ -40,6 +39,9 @@ X-SSH-Private-Key: /path-to-private-key
 
 ls -al
 ```
+
+httpx loads multi private keys from `$HOME/.ssh` automatically, and filename match rule is `id_\w+`.
+You can omit `X-SSH-Private-Key` if you copy ssh private key into `$HOME/.ssh` and rename it to `id_\w+` style.
 
 **Notes**:
 
