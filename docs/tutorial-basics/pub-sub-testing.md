@@ -27,6 +27,23 @@ SUB topic-1
 URI: kafka://localhost:9092
 ```
 
+**Custom Message Headers**: you can add custom message headers that prefix wit `X-`, and `X-` will be removed from header name. 
+
+```
+### publish Kafka message
+PUB topic-1
+URI: kafka://localhost:9092
+X-Custom-Header: header_value
+Content-Type: application/json
+
+{
+  "name": "Jackie"
+}
+```
+
+Custom message headers are available for Kafka, MQTT5, Apache Pulsar, RocketMQ.
+
+
 ### Apache Pulsar
 
 ```
