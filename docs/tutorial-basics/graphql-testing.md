@@ -29,24 +29,21 @@ query {
 
 * GraphQL over WebSocket support:  https://github.com/enisdenjo/graphql-ws
 
-Now you should use `GRAPHQLWS` or `GRAPHQLWSS` methods to test GraphQL services over WebSocket, and issue link here https://youtrack.jetbrains.com/issue/IDEA-290191
-
 ```
 ### graphql query over WebSocket
 //@name subscription
-GRAPHQLWS localhost:4000/graphql
+GRAPHQL ws://localhost:4000/graphql
 Content-Type: application/graphql
 
 subscription { greetings }
 ```
 
-* GraphQL over RSocket support:  https://docs.spring.io/spring-graphql/docs/1.0.0-RC1/reference/html/#server-rsocket
+* GraphQL over RSocket support: https://docs.spring.io/spring-graphql/docs/1.0.0/reference/html/#server-rsocket
 
 ```
-### GraphQL query over RSocket request/response
+### GraphQL query over RSocket: rsocket schema for tcp, rsocketws schema for WS and rsocketwss schema for WSS
 //@name graphql-rs-req
-GRAPHQLRS graphql
-Host: ws://localhost:8080/rsocket
+GRAPHQL rsocketws://localhost:8080/rsocket/graphql
 Content-Type: application/graphql
 
 query {
@@ -63,8 +60,7 @@ query {
 
 ### GraphQL subscription over RSocket Stream
 //@name graphql-rs-sub
-GRAPHQLRS graphql
-Host: ws://localhost:8080/rsocket
+GRAPHQL rsocketws://localhost:8080/rsocket/graphql
 Content-Type: application/graphql
 
 subscription { greetings }
@@ -82,16 +78,28 @@ Content-Type: application/graphql+json
 }
 ```
 
-* X-GraphQL-Variables header
+* GraphQL Variables
 
-It's hard to write GraphQL query with `application/graphql+json` data format, and `X-GraphQL-Variables` introduced for GraphQL variables.
+Please add GraphQL variables json after GraphQL query, for example:
 
 ```http request
-GRAPHQL https://httpbin.org/post
-Content-Type: application/graphql
-X-GraphQL-Variables:  {"id": 1}
+GRAPHQL ws://localhost:8080/graphql
 
-query { user($id: ID) { id name } }
+query demo($bookId: ID){
+    bookById(id: $bookId) {
+        id
+        name
+        pageCount
+        author {
+            firstName
+            lastName
+        }
+    }
+}
+
+{
+  "bookId": "book-1"
+}
 ```
 
 **Attention**: httpx JetBrains plugin requires [JetBrains GraphQL Plugin](https://plugins.jetbrains.com/plugin/8097-graphql) for GraphQL language features, please install it first.
