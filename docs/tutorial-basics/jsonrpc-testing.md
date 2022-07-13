@@ -20,7 +20,7 @@ Content-Type: application/json
 
 ```
 ### json-rpc over tcp
-JSONRPC 127.0.0.1:9080/add
+JSONRPC tcp://127.0.0.1:9080/add
 Content-Type: application/json
 
 [ 1, 2 ]
