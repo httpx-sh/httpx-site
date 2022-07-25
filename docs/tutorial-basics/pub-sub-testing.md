@@ -88,6 +88,29 @@ SUB queue1
 URI: amqp://localhost:5672
 ```
 
+### Apache RocketMQ
+
+Apache RocketMQ: https://rocketmq.apache.org/
+
+```
+### publish rocketmq message
+//@name rocketmq-pub
+PUB testTopic
+URI: rocketmq://localhost:9876
+Content-Type: application/json
+
+{
+  "name": "Jackie"
+}
+```
+
+```
+### consume rocketmq message
+//@name rocketmq-sub
+SUB testTopic
+URI: rocketmq://localhost:9876
+```
+
 ### NATS
 
 ```
