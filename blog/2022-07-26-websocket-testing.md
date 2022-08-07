@@ -1,5 +1,5 @@
 ---
-slug: httpx channel
+slug: httpx websocket
 title: 使用httpx进行WebSocket消息发送和消费
 authors: [linux_china]
 tags: [httpx, channel]
