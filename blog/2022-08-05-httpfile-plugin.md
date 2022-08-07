@@ -78,14 +78,14 @@ esbuild.build({
 此外这种方式排查问题也方便，如果服务调用有问题，你只要打开http文件测试一下就可以，而不是像之前那样去看应用中的JavaScript代码，如果涉及代码调整，还要涉及反复的单元测试。
 
 此外使用这种http文件loader方式，还可以很好地解决请求Mock的问题。如用户登录的API还没有开发完成，但是你要在程序要使用该接口，你不需要改任何代码，
-你只要在http文件中添加一个`Mock-Result`请求头，表示请求时直接返回该模拟数据，样例如下： 
+你只要在http文件中对应的请求添加`//@mock `tag，表示请求时直接返回该模拟数据，样例如下： 
 
 ```
 ### user login
 //@name login
+//@mock {"success": true}
 POST https://your_domain_com/user/login
 Content-Type: application/json
-Mock-Result: {"success": true}
 
 {
   "nick": "your_nick_name",
@@ -93,7 +93,19 @@ Mock-Result: {"success": true}
 }
 ```
 
-当REST API上线后，你只要将Mock-Result请求删除即可，这样就可以正常的调用REST API了。
+如果是多行数据，添加多个`//@mock `tag，如下： 
+
+```
+### get csv data
+//@name myData
+//@mock name,gender
+//@mock linux_china,M
+GET https://your_service/data
+Accept: text/csv
+```
+
+当REST API上线后，你只要将请求中的`//@mock `tag删除即可，这样就可以正常的调用REST API了。
+**Note**: 如果在上线前你忘记删除`//@mock `tag也没有关系，如果`process.env.NODE_ENV`的值为`production`，mock是会被忽略的。
 
 esbuild的httpfile插件地址： https://github.com/linux-china/esbuild-plugin-httpfile
 目前整合esbuild的框架非常多，这些框架都可以使用该插件。 如果是其他框架，也可以自己集成，并不复杂，
