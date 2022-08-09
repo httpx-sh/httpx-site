@@ -107,6 +107,6 @@ Accept: text/csv
 当REST API上线后，你只要将请求中的`//@mock `tag删除即可，这样就可以正常的调用REST API了。
 **Note**: 如果在上线前你忘记删除`//@mock `tag也没有关系，如果`process.env.NODE_ENV`的值为`production`，mock是会被忽略的。
 
-esbuild的httpfile插件地址： https://github.com/linux-china/esbuild-plugin-httpfile
+esbuild的httpfile插件地址： https://github.com/servicex-sh/esbuild-plugin-httpfile
 目前整合esbuild的框架非常多，这些框架都可以使用该插件。 如果是其他框架，也可以自己集成，并不复杂，
-另外可以参考Rollup的httpfile插件，地址为： https://github.com/linux-china/rollup-plugin-httpfile
+另外可以参考Rollup的httpfile插件，地址为： https://github.com/servicex-sh/rollup-plugin-httpfile
