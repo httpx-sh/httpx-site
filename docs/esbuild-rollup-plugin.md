@@ -48,4 +48,4 @@ console.log(await response.json());
 GraphQL over HTTP support too.  
 
 
-For more information, please click https://github.com/linux-china/esbuild-plugin-httpfile
+For more information, please click https://github.com/servicex-sh/esbuild-plugin-httpfile
