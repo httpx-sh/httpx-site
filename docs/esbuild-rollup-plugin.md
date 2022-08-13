@@ -6,6 +6,8 @@ sidebar_position: 6
 
 Now you can import http file as ESM module and make HTTP request with function style. 
 
+**Attention**: now httpfile plugin use global `fetch` API to make HTTP request, so please use Nodejs 18.x or `node-fetch`.
+
 For example, you have `demo.http` file wit following code: 
 
 ```
