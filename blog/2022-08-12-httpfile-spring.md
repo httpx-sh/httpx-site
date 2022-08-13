@@ -100,6 +100,10 @@ System.out.println(httpBinService.myIp().origin());
 而httpfile方式，你不需要构建body，body的内容已经在http文件中进行定义啦，你只要传递对应的模板变量就可以，当然这些变量都是通过API函数的参数传递的，
 也就是你看到到`PostResponse postTest(String nick);`这样方式，其中nick参数就http文件中的模板变量。
 
+看一下最终的效果截屏： 
+
+![httpfile Spring](../static/img/blog/httpfile-spring.png)
+
 考虑到http文件是支持GraphQL测试的，所以httpfile spring增加了对GraphQL的支持，样例如下：
 
 ```
