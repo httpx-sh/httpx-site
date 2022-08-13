@@ -104,23 +104,31 @@ System.out.println(httpBinService.myIp().origin());
 
 ![httpfile Spring](../static/img/blog/httpfile-spring.png)
 
-考虑到http文件是支持GraphQL测试的，所以httpfile spring增加了对GraphQL的支持，样例如下：
+考虑到http文件是支持GraphQL测试的，所以httpfile spring增加了对GraphQL的支持，GraphQL over HTTP请求如下：
 
 ```
 ### graphql test
 //@name graphqlTest
-GRAPHQL https://httpbin.org/post
+GRAPHQL https://graphql-server-demo.linux-china.workers.dev/graphql
 
 query {
-  hello
-}
-
-{
-  "hello": "abc"
+   welcome(name : "{{nick}}" )
 }
 ```
 
-调用的方式和POST一样，如有涉及模板变量，声明参数进行传递即可。
+然后你声明一下GraphQL请求，GraphQL的响应json主要包括`data`, `extensions`和`errors`，所以创建一个GraphqlResponse record即可，Java代码如下：
+
+```java
+@HttpFile("httpbin.http")
+public interface HttpBinService {
+  
+    @HttpRequestName("graphqlTest")
+    GraphqlResponse graphqlTest(String nick);
+
+    record GraphqlResponse(Map<String, Object> data, Map<String, Object> extensions, List<Object> errors) {
+    }
+}
+```
 
 # 总结
 
