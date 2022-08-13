@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# esbuild & rollup httpfile plugin
+# esbuild/Rollup httpfile plugin
 
 Now you can import http file as ESM module and make HTTP request with function style. 
 
@@ -47,5 +47,40 @@ console.log(await response.json());
 
 GraphQL over HTTP support too.  
 
+# Webpack loader for http file
 
-For more information, please click https://github.com/servicex-sh/esbuild-plugin-httpfile
+If you use Webpack, you can use `webpack-loader-httpfile` to import http file.
+
+* Add dev dependency: `npm install -D webpack-loader-httpfile`
+* Modify webpack configuration(webpack.config.js) file to add httpfile loader and `experiments.topLevelAwait` as following:
+
+```javascript
+const path = require('path');
+
+module.exports = {
+    module: {
+        rules: [
+            {
+                test: /\.http$/,
+                use: [
+                    {
+                        loader: path.resolve(__dirname, 'node_modules/webpack-loader-httpfile/index.js'),
+                        options: {
+                            verbose: true
+                        },
+                    },
+                ],
+            },
+        ]
+    },
+    experiments: {
+        topLevelAwait: true
+    }
+};
+```
+
+# Project repositories:
+
+* esbuild-plugin-httpfile: https://github.com/servicex-sh/esbuild-plugin-httpfile
+* rollup-plugin-httpfile: https://github.com/servicex-sh/rollup-plugin-httpfile
+* webpack-loader-httpfile: https://github.com/servicex-sh/webpack-loader-httpfile
