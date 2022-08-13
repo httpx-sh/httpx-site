@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# esbuild & rollup plugin: treat httpfile as ESM module
+# esbuild & rollup httpfile plugin
 
 Now you can import http file as ESM module and make HTTP request with function style. 
 
