@@ -58,7 +58,7 @@ Create GraphQL over HTTP request in http file, code as follows:
 ```
 ### graphql test
 //@name graphqlTest
-GRAPHQL https://graphql-server-demo.linux-china.workers.dev/graphql
+GRAPHQL https://localhost:8787/graphql
 
 query {
    welcome(name : "{{nick}}" )

@@ -109,7 +109,7 @@ System.out.println(httpBinService.myIp().origin());
 ```
 ### graphql test
 //@name graphqlTest
-GRAPHQL https://graphql-server-demo.linux-china.workers.dev/graphql
+GRAPHQL https://localhost:8787/graphql
 
 query {
    welcome(name : "{{nick}}" )
