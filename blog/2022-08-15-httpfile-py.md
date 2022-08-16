@@ -45,7 +45,9 @@ Content-Type: application/json
 接下来就是调用指定的http请求，如`r: Response = httpbin.my_ip()`，其中`my_ip`就是http文件中对应的请求名称，
 而r对应的类型为`Response`，这个其实就是Python httpx开发包的`from httpx import Response`类型，httpfile-py背后使用httpx作为HTTP Client。
 
-最后就是调用Response提供的方法，如`r.json()`表示返回json数据类型，然后就可以操作返回的数据了。
+最后就是调用Response提供的方法，如`r.json()`表示返回json数据类型，然后就可以操作返回的数据了，看一下最终的效果截屏：
+
+![httpfile-py](../static/img/blog/httpfile-py.png)
 
 考虑到Python的异步Async支持，如果你想调用异步的http请求，只要在请求名称添加上`async_`前缀，如`async_my_ip()`，就表示调用异步的http请求，样例代码如下：
 
