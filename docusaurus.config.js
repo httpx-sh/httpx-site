@@ -25,7 +25,7 @@ const config = {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
                 docs: {
-                    sidebarCollapsed: false
+                    sidebarCollapsed: true
                 }
             }),
         ],
