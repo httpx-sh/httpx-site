@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 2
 ---
 
-# Spring HTTP Interface with httpfile
+# Java
 
 [Spring 6.0 HTTP Interface](https://docs.spring.io/spring-framework/docs/6.0.0-M5/reference/html/integration.html#rest-http-interface)
 is a very important feature of Spring 6.0. You don't need to use WebClient to do HTTP requests, but instead adjust to Interface + Annotation style,
