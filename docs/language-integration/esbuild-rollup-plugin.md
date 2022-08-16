@@ -1,14 +1,19 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
 ---
 
-# esbuild/Rollup httpfile plugin
+# JavaScript
 
-Now you can import http file as ESM module and make HTTP request with function style. 
+Now you can import http file as ESM module and make HTTP request with following frameworks/tools support:
+
+* esbuild
+* Rollup.js
+* Webpack
+* Vite.js
 
 **Attention**: now httpfile plugin use global `fetch` API to make HTTP request, so please use Nodejs 18.x or `node-fetch`.
 
-For example, you have `demo.http` file wit following code: 
+For example, you have `demo.http` file wit following code:
 
 ```
 ### get my ip
@@ -31,7 +36,7 @@ Content-Type: application/json
 ```
 
 And you can import `demo.http` file as ESM module, and http request names will be treated as function names.
-You can call remote HTTP service with function style instead of HTTP Client API. 
+You can call remote HTTP service with function style instead of HTTP Client API.
 
 ```typescript
 import {myIp, postTest, graphqlSimple, graphqlDemo} from "./demo.http";
@@ -47,7 +52,7 @@ response = await postTest({nick: "test", host: "httpbin.org", "uuid": "c8389930-
 console.log(await response.json());
 ```
 
-GraphQL over HTTP support too.  
+GraphQL over HTTP support too.
 
 # Webpack loader for http file
 
@@ -86,3 +91,4 @@ module.exports = {
 * esbuild-plugin-httpfile: https://github.com/servicex-sh/esbuild-plugin-httpfile
 * rollup-plugin-httpfile: https://github.com/servicex-sh/rollup-plugin-httpfile
 * webpack-loader-httpfile: https://github.com/servicex-sh/webpack-loader-httpfile
+* vite-plugin-httpfile: https://github.com/servicex-sh/vite-plugin-httpfile
