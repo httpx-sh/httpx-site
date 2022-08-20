@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Rust
 
-[httpfile-rs](https://github.com/servicex-sh/httpfile-rs) is a httpfle code generator for Rust, and make HTTP requests call easy.
+[httpfile-rs](https://github.com/servicex-sh/httpfile-rs) is a httpfile code generator for Rust, and make HTTP requests call easy.
 
 
 * Create a Rust module, such as httpbin.rs with following content:
@@ -35,4 +35,4 @@ async fn main() -> Result<(), Box<dyn Error>> {
 }
 ```
 
-httpfile-rs is under active development, and it is not finished yet. For more please visit https://github.com/servicex-sh/httpfile-rs
+For more please visit https://github.com/servicex-sh/httpfile-rs
