@@ -89,7 +89,6 @@ module.exports = {
 
 # Bun loader plugin for http file
 
-
 If you use Bun, you can use `bun-plugin-httpfile` to import http file.
 
 * Add dev dependency: `npm install -D bun-plugin-httpfile`
