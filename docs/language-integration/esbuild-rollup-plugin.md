@@ -10,6 +10,7 @@ Now you can import http file as ESM module and make HTTP request with following 
 * Rollup.js
 * Webpack
 * Vite.js
+* Bun
 
 **Attention**: now httpfile plugin use global `fetch` API to make HTTP request, so please use Nodejs 18.x or `node-fetch`.
 
@@ -86,9 +87,29 @@ module.exports = {
 };
 ```
 
+# Bun loader plugin for http file
+
+
+If you use Bun, you can use `bun-plugin-httpfile` to import http file.
+
+* Add dev dependency: `npm install -D bun-plugin-httpfile`
+
+```javascript
+import { plugin } from "bun";
+
+import httpfilePlugin from 'bun-plugin-httpfile';
+plugin(httpfilePlugin());
+
+// Usage
+import {myIp} from "./index.http";
+let response = await myIp();
+console.log(await response.text());
+```
+
 # Project repositories:
 
 * esbuild-plugin-httpfile: https://github.com/servicex-sh/esbuild-plugin-httpfile
 * rollup-plugin-httpfile: https://github.com/servicex-sh/rollup-plugin-httpfile
 * webpack-loader-httpfile: https://github.com/servicex-sh/webpack-loader-httpfile
 * vite-plugin-httpfile: https://github.com/servicex-sh/vite-plugin-httpfile
+* bun-plugin-httpfile: https://github.com/servicex-sh/bun-plugin-httpfile
