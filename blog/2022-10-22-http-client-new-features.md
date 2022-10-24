@@ -42,3 +42,5 @@ GET http://localhost:8080/api/user/{{name}}
 ![Random API](https://blog.jetbrains.com/wp-content/uploads/2022/10/image-36.png)
 
 这样使用mock数据进行服务测试也简单多啦。
+
+httpx命令行也做了相应的更新，在最新的[0.37.1版本](https://github.com/servicex-sh/httpx/releases/tag/v0.37.1)中，已经增加了这些特性的支持。
