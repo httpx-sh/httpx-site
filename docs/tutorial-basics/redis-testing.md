@@ -32,6 +32,40 @@ Content-Type: application/json
 { "id": 1, "name": "jackie"}     
 ```
 
+* Redis JSON.SET to set JSON value
+
+```
+### Redis JSON.SET
+#@name redis-jsonset
+JSONSET user.1/$
+Host: localhost:16379
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "jackie",
+  "age": 42
+}
+```
+
+* Redis JSON.GET to get JSON value
+
+```
+### Redis JSON.GET whole object
+#@name redis-jsonget
+JSONGET user.1
+Host: localhost:16379
+```
+
+or
+
+```
+### redis JSON.GET with $path
+#@name redis-jsonget
+JSONGET user.1/$path
+Host: localhost:16379
+```
+
 * Redis EVAL script
 
 ```
