@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Java
 
-[Spring 6.0 HTTP Interface](https://docs.spring.io/spring-framework/docs/6.0.0-M5/reference/html/integration.html#rest-http-interface)
+[Spring 6.0 HTTP Interface](https://docs.spring.io/spring-framework/docs/6.0.0/reference/html/integration.html#rest-http-interface)
 is a very important feature of Spring 6.0. You don't need to use WebClient to do HTTP requests, but instead adjust to Interface + Annotation style,
 example code is as follows:
 
@@ -49,7 +49,7 @@ Pros:
 * No need to introduce lots of HTTP annotations: `@RequestHeader`, `@RequestBody`, `@PathVariable`
 * Reuse existing http file, and http file is easy for test
 * GraphQL over HTTP support too
-* Misc: yes, you can use `//@mock ` to introduce mock for request
+* Misc: yes, you can use `#@mock ` to introduce mock for request
 
 # Spring HTTP Interface with GraphQL
 
@@ -57,7 +57,7 @@ Create GraphQL over HTTP request in http file, code as follows:
 
 ```
 ### graphql test
-//@name graphqlTest
+#@name graphqlTest
 GRAPHQL https://localhost:8787/graphql
 
 query {
