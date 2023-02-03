@@ -57,5 +57,5 @@ GET https://httpbin.org/ip
 You can generate http file from OpenAPI json file by [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)
 
 ```bash
-$ openapi-generator-cli generate -i http://localhost:8080/v3/api-docs -g jetbrains-http-client -o http-demo
+$ openapi-generator-cli generate -i http://localhost:8080/v3/api-docs -g jetbrains-http-client -o openapi-testing
 ```
