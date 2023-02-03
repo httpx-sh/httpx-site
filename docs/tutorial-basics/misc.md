@@ -54,16 +54,8 @@ GET https://httpbin.org/ip
 
 ### Generate http file OpenAPI
 
-You can generate http file from OpenAPI json file:
+You can generate http file from OpenAPI json file by [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)
 
 ```bash
-$ httpx -f openapi.http --import https://api.exmaple.com/openapi.json
+$ openapi-generator-cli generate -i http://localhost:8080/v3/api-docs -g jetbrains-http-client -o http-demo
 ```
-
-If you want to generate http file for http path(wildcard match), use following example:
-
-```bash
-$ httpx -f openapi.http --import https://api.exmaple.com/openapi.json  /user
-```
-
-**Attention**: If no target from CLI, and httpx will run first target in http file!
