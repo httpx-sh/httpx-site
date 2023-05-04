@@ -2,7 +2,7 @@
 sidebar_position: 19
 ---
 
-# ChatGPt testing
+# ChatGPT testing
 
 [ChatGPT](https://chat.openai.com/) is very popular now, and lots of developers use it to assistant their work.
 But sometimes it is not easy to input long text with code in chat input box.
