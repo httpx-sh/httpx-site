@@ -4,7 +4,7 @@ sidebar_position: 18
 
 # tRPC testing
 
-[tRPC](https://www.jsonrpc.org/specification) allows you to easily build & consume fully typesafe APIs without schemas or code generation, 
+[tRPC](https://trpc.io/) allows you to easily build & consume fully typesafe APIs without schemas or code generation, 
 and it makes it easy to write endpoints that you can safely use in both the front and backend of your app.
 
 * tRPC query testing
