@@ -35,5 +35,18 @@ httpx extracts the answer from JSON, and then display it in the bottom, and you 
 
 ![ChatGPT](../../static/img/blog/chatgpt-response.png)
 
+If you want system/assistant message, you can use Markdown attributes `{.system}` or `{.assistant}` to mark paragraph.
+
+```
+### ChatGPT with JBang
+
+CHATGPT https://api.openai.com/v1/chat/completions
+
+You are to generate Java code in the style of jbang, and main class must be named Hello. {.system}
+
+Build a CLI app with Picocli 4.7.3 library, and include name and email options. Do not add any additional text.
+
+Please use Java 17. {.assistant}
+```
 
 **Tips**: if set `OPENAI_API_KEY` environment variable, you don't need to set `X-OPENAI-API-KEY` HTTP header.
